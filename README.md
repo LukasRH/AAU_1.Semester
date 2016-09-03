@@ -3,7 +3,7 @@
 ## Imperative Programmering
 ### Lektioner
 1. Lektion
-  1. Programmerings Stil
+  1. [Programmerings Stil](/IMPERATIV PROGRAMMERING/Lektion1/Programmerings_Stil)
     * Dårlig Stil
     * God Stil
   2. Hello World
