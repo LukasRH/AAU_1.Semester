@@ -8,6 +8,11 @@
     * God Stil
   2. Hello World
 2. Lektion
+  1. Hjemmeopgaver
+    * Opgave 2,3
+    * PM Opgave 2
+    * SC Opgave 1
+  2. Timer, minutter, sekunder
 3. Lektion
 4. Lektion
 5. Lektion
