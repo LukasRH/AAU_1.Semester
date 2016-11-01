@@ -28,6 +28,7 @@ int main(void)
     free(res_array);
 }
 
+
 void merge_sorted(double first_array[], double second_array[], double res_array[], double size_first, double size_second)
 {
     int i=0, j=0, k=0;
