@@ -55,12 +55,6 @@ struct team
         int total;
     }losses;
     int ties;
-    struct crowd
-    {
-        int at_home;
-        int away;
-        int total;
-    }crowd;
 };
 
 typedef struct match Match;
@@ -74,8 +68,8 @@ void find_rounds_under(int total_matches, Match matches[total_matches]);
 int find_rounds(int total_matches, int goals, int rounds[total_matches][total_matches], Match matches[total_matches]);
 void print_matches(char *title, int length, Match match[length]);
 void get_teams(int total_matches, Match matches[total_matches], Team teams[TOTAL_TEAMS]);
-void find_team_names(int total_matches, Match matches[total_matches], char team_names[TOTAL_TEAMS][MAX_NAME_LGT]);
-int compare (const void *a, const void *b);
+void find_team_names(int total_matches, Match matches[total_matches], Team teams[TOTAL_TEAMS]);
+void find_team_matches(int total_matches, Match matches[total_matches], Team teams[TOTAL_TEAMS]);
 
 
 int main(int argc, char *argv[]){
@@ -89,9 +83,9 @@ int main(int argc, char *argv[]){
 
 
     //get_ties_above_four(total_matches, matches);
-    find_rounds_under(total_matches, matches);
+    //find_rounds_under(total_matches, matches);
 
-    //get_teams(total_matches, matches, teams);
+    get_teams(total_matches, matches, teams);
 
 }
 
@@ -100,8 +94,8 @@ int get_total_matches(char *file){
     int c;
     int newline_count = 0;
 
-    while ( (c=fgetc(fp)) != EOF ) {
-        if ( c == '\n' )
+    while ((c=fgetc(fp)) != EOF) {
+        if (c == '\n')
             ++newline_count;
     }
     /* Since the last line dosnt have a line shift, the loop wont count it up */
@@ -142,42 +136,81 @@ Match read_matches(FILE *fp){
 }
 
 void get_teams(int total_matches, Match matches[total_matches], Team teams[TOTAL_TEAMS]){
-    char team_names[TOTAL_TEAMS][MAX_NAME_LGT];
-
-    find_team_names(total_matches, matches, team_names);
-}
-
-void find_team_names(int total_matches, Match matches[total_matches], char team_names[TOTAL_TEAMS][MAX_NAME_LGT]){
-    char names[total_matches][MAX_NAME_LGT];
-
-    for (int i = 0; i < total_matches; i++)
-    {
-        strcpy(names[i],matches[i].homeTeam.name);
-    }
     
-    qsort(names, total_matches, MAX_NAME_LGT, compare);
-
-    int i = 0, j = 0;
-    while (j <= TOTAL_TEAMS)
-    {
-        if (!strcmp(team_names[j],names[i]))
-        {
-            strcpy(team_names[j],names[i]);
-            ++j;
-            ++i;
-        } else
-            ++i;
-    }
+    find_team_names(total_matches, matches, teams);
+    //find_team_matches(total_matches, matches, teams);
 
     for (int i = 0; i < TOTAL_TEAMS; i++)
     {
-        printf("%s\n",team_names[i]);
+        printf("%s\n",teams[i].name);
+        //printf("%s\n",teams[i].wins.at_home);
+        //printf("%s\n",teams[i].wins.away);
+        //printf("%s\n",teams[i].wins.total);
     }
 }
 
-int compare(const void *a, const void *b) { 
-    return strcmp(a, b); 
+void find_team_names(int total_matches, Match matches[total_matches], Team teams[TOTAL_TEAMS]){
+    int j = 0;
+    for (int i = 0; i < 6; i++)
+    {
+        strcpy(teams[j].name, matches[i].homeTeam.name);
+        ++j;
+        strcpy(teams[j].name, matches[i].awayTeam.name);
+        ++j;
+    }
 }
+
+void find_team_matches(int total_matches, Match matches[total_matches], Team teams[TOTAL_TEAMS]){
+    for (int i = 0; i < TOTAL_TEAMS; i++)
+    {
+        for (int j = 0; j < total_matches; i++)
+        
+        {
+            if (teams[i].name == matches[j].homeTeam.name || matches[j].awayTeam.name)
+            {
+                teams[i].matches += 1;
+
+                if (teams[i].name == matches[j].homeTeam.name && matches[j].homeTeam.goals > matches[j].awayTeam.goals)
+                {
+                    teams[i].wins.at_home += 1;
+                } else
+                {
+                    teams[i].losses.at_home += 1;
+                }
+
+                if (teams[i].name == matches[j].awayTeam.name && matches[j].homeTeam.goals < matches[j].awayTeam.goals)
+                {
+                    teams[i].wins.away += 1;
+                } else
+                {
+                    teams[i].losses.away += 1;
+                }
+            }
+        }
+       teams[i].wins.total =  teams[i].wins.at_home + teams[i].wins.away;
+       teams[i].losses.total =  teams[i].losses.at_home + teams[i].losses.away;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 void get_ties_above_four(int total_matches, Match matches[total_matches]){
     int j = 0;
