@@ -71,7 +71,7 @@ void get_matches(char *file, int total_matches, Match matches[total_matches]);
 Match read_matches(FILE *fp);
 void get_ties_above_four(int total_matches, Match matches[total_matches]);
 void find_rounds_under(int total_matches, Match matches[total_matches]);
-int find_rounds(int total_matches, int goals, int round_numbers[total_matches], int goals_in_round[total_matches], Match matches[total_matches]);
+int find_rounds(int total_matches, int goals, int rounds[total_matches][total_matches], Match matches[total_matches]);
 void print_matches(char *title, int length, Match match[length]);
 void get_teams(int total_matches, Match matches[total_matches], Team teams[TOTAL_TEAMS]);
 void find_team_names(int total_matches, Match matches[total_matches], char team_names[TOTAL_TEAMS][MAX_NAME_LGT]);
@@ -89,9 +89,9 @@ int main(int argc, char *argv[]){
 
 
     //get_ties_above_four(total_matches, matches);
-    //find_rounds_under(total_matches, matches);
+    find_rounds_under(total_matches, matches);
 
-    get_teams(total_matches, matches, teams);
+    //get_teams(total_matches, matches, teams);
 
 }
 
@@ -195,33 +195,50 @@ void get_ties_above_four(int total_matches, Match matches[total_matches]){
 }
 
 void find_rounds_under(int total_matches, Match matches[total_matches]){
-    int round_numbers[total_matches], goals_in_round[total_matches];
+    int rounds[total_matches][total_matches];
     int goals = 10;
 
-    int total = find_rounds(total_matches, goals, round_numbers, goals_in_round, matches);
+    int total = find_rounds(total_matches, goals, rounds, matches);
 
-    printf("Found %d matches whichs total score was below 10:\n\n", total);
+    printf("Found %d rounds whichs total score was below 10:\n\n", total);
     for (int i = 0; i < total; i++)
     {
-        printf("Round: %-5d Goals: %-5d\n",round_numbers[i], goals_in_round[i]);
+        printf("Round: %-5d Goals: %-5d\n",rounds[0][i], rounds[1][i]);
     }
-    free(round_numbers);
-    free(goals_in_round);
 }
 
-int find_rounds(int total_matches, int goals, int round_numbers[total_matches], int goals_in_round[total_matches], Match matches[total_matches]){
-    int j = 0;
-    for (int i = 0; i < total_matches; i++)
+int find_rounds(int total_matches, int goals, int rounds[total_matches][total_matches], Match matches[total_matches]){
+    int j = 0, goals_in_round = 0, number_rounds;
+    number_rounds = matches[total_matches-1].round;
+    int all_rounds[number_rounds][number_rounds];
+
+    for (int i = 0; i < number_rounds; i++)
     {
-        if (matches[i].homeTeam.goals + matches[i].awayTeam.goals < goals)
+        all_rounds[0][i] = i+1;
+
+        for (int k = 0; k < total_matches; k++)
         {
-            round_numbers[j] = matches[i].round;
-            goals_in_round[j] = matches[i].homeTeam.goals + matches[i].awayTeam.goals;
+            if (matches[k].round == all_rounds[0][i])
+            {
+                goals_in_round += matches[k].homeTeam.goals + matches[k].awayTeam.goals;
+            }
+        }
+
+        all_rounds[1][i] = goals_in_round;
+        goals_in_round = 0;
+    }
+
+    for (int i = 0; i < number_rounds; i++)
+    {
+        if (all_rounds[1][i] < goals)
+        {
+            rounds[0][j] = all_rounds[0][i];
+            rounds[1][j] = all_rounds[1][i];
             ++j;
         }
     }
-    round_numbers = (int *) realloc(round_numbers,j);
-    goals_in_round = (int *) realloc(goals_in_round,j);
+
+
     return j;
 }
 
