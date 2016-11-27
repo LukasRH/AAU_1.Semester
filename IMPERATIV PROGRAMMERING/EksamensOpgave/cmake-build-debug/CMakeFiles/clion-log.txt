@@ -1,0 +1,75 @@
+"D:\Program Files (x86)\JetBrains\CLion 2016.3\bin\cmake\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" "D:\GitHub\AAU_Projects\IMPERATIV PROGRAMMERING\EksamensOpgave"
+CMake Error at D:/Program Files (x86)/JetBrains/CLion 2016.3/bin/cmake/share/cmake-3.6/Modules/CMakeDetermineCompilerId.cmake:444 (file):
+  file STRINGS file "D:/GitHub/AAU_Projects/IMPERATIV
+  PROGRAMMERING/EksamensOpgave/cmake-build-debug/CMakeFiles/3.6.2/CompilerIdC/a.exe"
+  cannot be read.
+Call Stack (most recent call first):
+  D:/Program Files (x86)/JetBrains/CLion 2016.3/bin/cmake/share/cmake-3.6/Modules/CMakeDetermineCompilerId.cmake:46 (CMAKE_DETERMINE_COMPILER_ID_CHECK)
+  D:/Program Files (x86)/JetBrains/CLion 2016.3/bin/cmake/share/cmake-3.6/Modules/CMakeDetermineCCompiler.cmake:121 (CMAKE_DETERMINE_COMPILER_ID)
+  CMakeLists.txt:2 (project)
+
+
+CMake Error at D:/Program Files (x86)/JetBrains/CLion 2016.3/bin/cmake/share/cmake-3.6/Modules/CMakeDetermineCompilerId.cmake:508 (file):
+  file failed to open for reading (Permission denied):
+
+    D:/GitHub/AAU_Projects/IMPERATIV PROGRAMMERING/EksamensOpgave/cmake-build-debug/CMakeFiles/3.6.2/CompilerIdC/a.exe
+Call Stack (most recent call first):
+  D:/Program Files (x86)/JetBrains/CLion 2016.3/bin/cmake/share/cmake-3.6/Modules/CMakeDetermineCompilerId.cmake:46 (CMAKE_DETERMINE_COMPILER_ID_CHECK)
+  D:/Program Files (x86)/JetBrains/CLion 2016.3/bin/cmake/share/cmake-3.6/Modules/CMakeDetermineCCompiler.cmake:121 (CMAKE_DETERMINE_COMPILER_ID)
+  CMakeLists.txt:2 (project)
+
+
+CMake Error at D:/Program Files (x86)/JetBrains/CLion 2016.3/bin/cmake/share/cmake-3.6/Modules/CMakeDetermineCompilerId.cmake:510 (string):
+  string begin index: 1 is out of range 0 - 0
+Call Stack (most recent call first):
+  D:/Program Files (x86)/JetBrains/CLion 2016.3/bin/cmake/share/cmake-3.6/Modules/CMakeDetermineCompilerId.cmake:46 (CMAKE_DETERMINE_COMPILER_ID_CHECK)
+  D:/Program Files (x86)/JetBrains/CLion 2016.3/bin/cmake/share/cmake-3.6/Modules/CMakeDetermineCCompiler.cmake:121 (CMAKE_DETERMINE_COMPILER_ID)
+  CMakeLists.txt:2 (project)
+
+
+CMake Error at D:/Program Files (x86)/JetBrains/CLion 2016.3/bin/cmake/share/cmake-3.6/Modules/CMakeDetermineCompilerId.cmake:518 (math):
+  math cannot parse the expression: " * 16 + ": syntax error, unexpected
+  exp_TIMES, expecting exp_OPENPARENT or exp_NUMBER (2)
+Call Stack (most recent call first):
+  D:/Program Files (x86)/JetBrains/CLion 2016.3/bin/cmake/share/cmake-3.6/Modules/CMakeDetermineCompilerId.cmake:46 (CMAKE_DETERMINE_COMPILER_ID_CHECK)
+  D:/Program Files (x86)/JetBrains/CLion 2016.3/bin/cmake/share/cmake-3.6/Modules/CMakeDetermineCCompiler.cmake:121 (CMAKE_DETERMINE_COMPILER_ID)
+  CMakeLists.txt:2 (project)
+
+
+CMake Error at D:/Program Files (x86)/JetBrains/CLion 2016.3/bin/cmake/share/cmake-3.6/Modules/CMakeDetermineCompilerId.cmake:520 (file):
+  file failed to open for reading (Permission denied):
+
+    D:/GitHub/AAU_Projects/IMPERATIV PROGRAMMERING/EksamensOpgave/cmake-build-debug/CMakeFiles/3.6.2/CompilerIdC/a.exe
+Call Stack (most recent call first):
+  D:/Program Files (x86)/JetBrains/CLion 2016.3/bin/cmake/share/cmake-3.6/Modules/CMakeDetermineCompilerId.cmake:46 (CMAKE_DETERMINE_COMPILER_ID_CHECK)
+  D:/Program Files (x86)/JetBrains/CLion 2016.3/bin/cmake/share/cmake-3.6/Modules/CMakeDetermineCCompiler.cmake:121 (CMAKE_DETERMINE_COMPILER_ID)
+  CMakeLists.txt:2 (project)
+
+
+CMake Error at D:/Program Files (x86)/JetBrains/CLion 2016.3/bin/cmake/share/cmake-3.6/Modules/CMakeDetermineCompilerId.cmake:558 (file):
+  file failed to open for reading (Permission denied):
+
+    D:/GitHub/AAU_Projects/IMPERATIV PROGRAMMERING/EksamensOpgave/cmake-build-debug/CMakeFiles/3.6.2/CompilerIdC/a.exe
+Call Stack (most recent call first):
+  D:/Program Files (x86)/JetBrains/CLion 2016.3/bin/cmake/share/cmake-3.6/Modules/CMakeDetermineCompilerId.cmake:46 (CMAKE_DETERMINE_COMPILER_ID_CHECK)
+  D:/Program Files (x86)/JetBrains/CLion 2016.3/bin/cmake/share/cmake-3.6/Modules/CMakeDetermineCCompiler.cmake:121 (CMAKE_DETERMINE_COMPILER_ID)
+  CMakeLists.txt:2 (project)
+
+
+-- The C compiler identification is GNU 5.3.0
+-- The CXX compiler identification is GNU 5.3.0
+-- Check for working C compiler: D:/MinGW/bin/gcc.exe
+-- Check for working C compiler: D:/MinGW/bin/gcc.exe -- works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Check for working CXX compiler: D:/MinGW/bin/g++.exe
+-- Check for working CXX compiler: D:/MinGW/bin/g++.exe -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Configuring incomplete, errors occurred!
+See also "D:/GitHub/AAU_Projects/IMPERATIV PROGRAMMERING/EksamensOpgave/cmake-build-debug/CMakeFiles/CMakeOutput.log".
+See also "D:/GitHub/AAU_Projects/IMPERATIV PROGRAMMERING/EksamensOpgave/cmake-build-debug/CMakeFiles/CMakeError.log".
