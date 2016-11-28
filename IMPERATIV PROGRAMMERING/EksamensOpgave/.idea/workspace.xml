@@ -27,19 +27,17 @@
   <component name="FileEditorManager">
     <splitter split-orientation="horizontal" split-proportion="0.5495553">
       <split-first>
-        <leaf>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file leaf-file-name="superliga.c" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/superliga.c">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="3247">
-                  <caret line="254" column="44" lean-forward="false" selection-start-line="254" selection-start-column="44" selection-end-line="254" selection-end-column="44" />
+                <state relative-caret-position="195">
+                  <caret line="119" column="45" lean-forward="true" selection-start-line="119" selection-start-column="45" selection-end-line="119" selection-end-column="45" />
                   <folding>
-                    <element signature="e#731#1150#1" expanded="false" />
                     <element signature="e#6837#7089#0" expanded="false" />
                     <element signature="e#7091#7408#0" expanded="false" />
                     <element signature="e#7410#7880#0" expanded="false" />
                     <element signature="e#7882#8287#0" expanded="false" />
-                    <element signature="e#8289#8917#0" expanded="false" />
                     <element signature="e#8919#9457#0" expanded="false" />
                     <element signature="e#9459#9806#0" expanded="false" />
                     <element signature="e#9808#10638#0" expanded="false" />
@@ -74,14 +72,14 @@
         </leaf>
       </split-first>
       <split-second>
-        <leaf>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file leaf-file-name="superliga.c" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/superliga.c">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1296">
+                <state relative-caret-position="884">
                   <caret line="105" column="13" lean-forward="false" selection-start-line="105" selection-start-column="13" selection-end-line="105" selection-end-column="13" />
                   <folding>
-                    <element signature="e#406#728#1" expanded="false" />
+                    <element signature="e#731#1150#1" expanded="false" />
                     <element signature="e#6837#7089#0" expanded="false" />
                     <element signature="e#7091#7408#0" expanded="false" />
                     <element signature="e#7410#7880#0" expanded="false" />
@@ -89,6 +87,7 @@
                     <element signature="e#8289#8917#0" expanded="false" />
                     <element signature="e#8919#9457#0" expanded="false" />
                     <element signature="e#9459#9806#0" expanded="false" />
+                    <element signature="e#9808#10638#0" expanded="false" />
                     <element signature="e#10640#11031#0" expanded="false" />
                     <element signature="e#11033#11435#0" expanded="false" />
                     <element signature="e#11437#12010#0" expanded="false" />
@@ -105,6 +104,11 @@
                     <element signature="e#17781#17922#0" expanded="false" />
                     <element signature="e#17924#18313#0" expanded="false" />
                     <element signature="e#18315#18630#0" expanded="false" />
+                    <element signature="e#18632#18967#0" expanded="false" />
+                    <element signature="e#18969#19123#0" expanded="false" />
+                    <element signature="e#19125#19564#0" expanded="false" />
+                    <element signature="e#19566#19772#0" expanded="false" />
+                    <element signature="e#19774#19973#0" expanded="false" />
                     <element signature="e#19866#19882#0" expanded="true" />
                     <element signature="e#19946#19960#0" expanded="true" />
                   </folding>
@@ -379,12 +383,13 @@
       <option name="project" value="LOCAL" />
       <updated>1480251230337</updated>
       <workItem from="1480251230493" duration="7661000" />
+      <workItem from="1480263344814" duration="812000" />
     </task>
     <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="29440000" />
+    <option name="totallyTimeSpent" value="30252000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -435,12 +440,57 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#731#1150#1" expanded="false" />
             <element signature="e#6837#7089#0" expanded="false" />
             <element signature="e#7091#7408#0" expanded="false" />
             <element signature="e#7410#7880#0" expanded="false" />
             <element signature="e#7882#8287#0" expanded="false" />
-            <element signature="e#8289#8917#0" expanded="false" />
+            <element signature="e#8919#9457#0" expanded="false" />
+            <element signature="e#9459#9806#0" expanded="false" />
+            <element signature="e#9808#10638#0" expanded="false" />
+            <element signature="e#10640#11031#0" expanded="false" />
+            <element signature="e#11033#11435#0" expanded="false" />
+            <element signature="e#11437#12010#0" expanded="false" />
+            <element signature="e#12012#12308#0" expanded="false" />
+            <element signature="e#12310#12650#0" expanded="false" />
+            <element signature="e#12652#14648#0" expanded="false" />
+            <element signature="e#14650#14849#0" expanded="false" />
+            <element signature="e#14851#15286#0" expanded="false" />
+            <element signature="e#15288#15475#0" expanded="false" />
+            <element signature="e#15477#15622#0" expanded="false" />
+            <element signature="e#15624#16535#0" expanded="false" />
+            <element signature="e#16537#17142#0" expanded="false" />
+            <element signature="e#17144#17779#0" expanded="false" />
+            <element signature="e#17781#17922#0" expanded="false" />
+            <element signature="e#17924#18313#0" expanded="false" />
+            <element signature="e#18315#18630#0" expanded="false" />
+            <element signature="e#18632#18967#0" expanded="false" />
+            <element signature="e#18969#19123#0" expanded="false" />
+            <element signature="e#19125#19564#0" expanded="false" />
+            <element signature="e#19566#19772#0" expanded="false" />
+            <element signature="e#19774#19973#0" expanded="false" />
+            <element signature="e#19866#19882#0" expanded="true" />
+            <element signature="e#19946#19960#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/superliga-2015-2016">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="31" lean-forward="false" selection-start-line="0" selection-start-column="31" selection-end-line="0" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/superliga.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#6837#7089#0" expanded="false" />
+            <element signature="e#7091#7408#0" expanded="false" />
+            <element signature="e#7410#7880#0" expanded="false" />
+            <element signature="e#7882#8287#0" expanded="false" />
             <element signature="e#8919#9457#0" expanded="false" />
             <element signature="e#9459#9806#0" expanded="false" />
             <element signature="e#9808#10638#0" expanded="false" />
@@ -484,12 +534,10 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#731#1150#1" expanded="false" />
             <element signature="e#6837#7089#0" expanded="false" />
             <element signature="e#7091#7408#0" expanded="false" />
             <element signature="e#7410#7880#0" expanded="false" />
             <element signature="e#7882#8287#0" expanded="false" />
-            <element signature="e#8289#8917#0" expanded="false" />
             <element signature="e#8919#9457#0" expanded="false" />
             <element signature="e#9459#9806#0" expanded="false" />
             <element signature="e#9808#10638#0" expanded="false" />
@@ -533,12 +581,10 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#731#1150#1" expanded="false" />
             <element signature="e#6837#7089#0" expanded="false" />
             <element signature="e#7091#7408#0" expanded="false" />
             <element signature="e#7410#7880#0" expanded="false" />
             <element signature="e#7882#8287#0" expanded="false" />
-            <element signature="e#8289#8917#0" expanded="false" />
             <element signature="e#8919#9457#0" expanded="false" />
             <element signature="e#9459#9806#0" expanded="false" />
             <element signature="e#9808#10638#0" expanded="false" />
@@ -574,12 +620,10 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#731#1150#1" expanded="false" />
             <element signature="e#6837#7089#0" expanded="false" />
             <element signature="e#7091#7408#0" expanded="false" />
             <element signature="e#7410#7880#0" expanded="false" />
             <element signature="e#7882#8287#0" expanded="false" />
-            <element signature="e#8289#8917#0" expanded="false" />
             <element signature="e#8919#9457#0" expanded="false" />
             <element signature="e#9459#9806#0" expanded="false" />
             <element signature="e#9808#10638#0" expanded="false" />
@@ -627,15 +671,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/superliga.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3247">
-          <caret line="254" column="44" lean-forward="false" selection-start-line="254" selection-start-column="44" selection-end-line="254" selection-end-column="44" />
+        <state relative-caret-position="195">
+          <caret line="119" column="45" lean-forward="true" selection-start-line="119" selection-start-column="45" selection-end-line="119" selection-end-column="45" />
           <folding>
-            <element signature="e#731#1150#1" expanded="false" />
             <element signature="e#6837#7089#0" expanded="false" />
             <element signature="e#7091#7408#0" expanded="false" />
             <element signature="e#7410#7880#0" expanded="false" />
             <element signature="e#7882#8287#0" expanded="false" />
-            <element signature="e#8289#8917#0" expanded="false" />
             <element signature="e#8919#9457#0" expanded="false" />
             <element signature="e#9459#9806#0" expanded="false" />
             <element signature="e#9808#10638#0" expanded="false" />
